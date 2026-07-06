@@ -5,7 +5,7 @@ ausdrückt, um die Konzentration beim Lernen zu fördern.
 
 Projekt im Modul **Interaktive Systeme**, Sommersemester 2026, TH Brandenburg (Gruppe 6).
 
-![Der fertige Study Noise Guardian](docs/fertiges_produkt.jpg)
+
 
 ## Team
 
@@ -34,7 +34,7 @@ Kopf-Würfel und kurze Melodien.
 | Passiver Buzzer | Töne: Begrüßung, Warnung, Pausenmelodie | 8 |
 | Arduino Uno | Steuereinheit, führt die State Machine aus | – |
 
-![Verwendete Sensoren und Aktoren](docs/komponenten_uebersicht.png)
+
 
 Das Gehäuse besteht aus lasergeschnittenem MDF mit zwei Ultraschall-Sensoren als „Augen" und dem
 Buzzer als „Mund". Auf dem Gehäuse sitzt ein milchig-durchscheinender Würfel als Kopf, in den die
@@ -55,7 +55,7 @@ Die Software ist als nicht-blockierende Zustandsmaschine mit sieben Zuständen u
 | `PAUSE` | Lernpause | Warmes Orange | 90° | Kleine Melodie |
 | `ABSENCE_CHECK` | Prüft, ob die Person noch da ist | Blaues Prüfsignal | – | – |
 
-![UML-Aktivitätsdiagramm](docs/uml_diagramm.png)
+
 
 Der Geräuschpegel wird nicht als absoluter Wert gemessen, sondern als Differenz zwischen dem
 größten und kleinsten Analogwert innerhalb eines 50-ms-Zeitfensters (`readSoundDelta()`) – das
@@ -91,12 +91,12 @@ README.md
 
 ## Evaluation (Kurzfassung)
 
-Drei Nutzertests mit halbstrukturierten Interviews zeigten: Das multimodale Feedback (Bewegung +
+Fünf  Nutzertests mit halbstrukturierten Interviews zeigten: Das multimodale Feedback (Bewegung +
 Licht + Ton) macht die Erkennung sofort verständlich; Grün und Rot werden eindeutig gedeutet,
 Violett bislang nicht; die Reaktion auf Lärm wird als freundliche Erinnerung statt als Bestrafung
 wahrgenommen. Details siehe Projektbericht.
 
 ## Lizenz / Quellen
 
-Der Code wurde vollständig von der Projektgruppe selbst geschrieben. Verwendete Bibliothek:
+Der Code wurde von der Projektgruppe mit hilfe von Chatgpt und Video aus Youtube geschrieben. Verwendete Bibliothek:
 Arduino `Servo.h` (Standardbibliothek der Arduino IDE).
